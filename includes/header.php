@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,15 +20,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <?php
+                $baseurl = "/intership_monitoring";
                 $pages = [
-                    'Home' => '../index',
-                    'Data Siswa' => '../pages/students',
-                    'Data Perusahaan' => '/companies',
-                    'Jadwal Monitoring' => '/monitoring'
+                    'Home' => '/index',
+                    'Data Siswa' => '/pages/students',
+                    'Data Perusahaan' => '/pages/companies',
+                    'Jadwal Monitoring' => '/pages/monitoring'
                 ];
                 foreach ($pages as $label => $url): ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= $url ?>"><?= $label ?></a>
+                        <a class="nav-link" href="<?= $baseurl.$url ?>"><?= $label ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>
