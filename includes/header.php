@@ -26,6 +26,8 @@
                     'Data Siswa' => '/pages/students',
                     'Data Guru' => '/pages/teachers',
                     'Data Perusahaan' => '/pages/companies',
+                    'Periode'=>'/pages/periode',
+                    'Intership'=>'/pages/intership',
                     'Jadwal Monitoring' => '/pages/monitoring'
                 ];
                 foreach ($pages as $label => $url): ?>
