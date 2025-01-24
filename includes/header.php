@@ -28,7 +28,8 @@
                     'Data Perusahaan' => '/pages/companies',
                     'Periode'=>'/pages/periode',
                     'Internship'=>'/pages/internship',
-                    'Jadwal Monitoring' => '/pages/monitoring'
+                    'Monitoring' => '/pages/monitoring',
+                    'Jadwal' => '/pages/jadwal'
                 ];
                 foreach ($pages as $label => $url): ?>
                     <li class="nav-item">

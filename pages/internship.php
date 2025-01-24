@@ -33,7 +33,7 @@ if (isset($_GET['delete'])) {
 
 // Ambil Data Internships
 $internships = $pdo->query("
-    SELECT m.id, t.name AS teacher_name, s.name AS student_name, c.name AS company_name, m.period_id,i.start_date,i.end_date  
+    SELECT m.id, t.name AS teacher_name, s.name AS student_name, c.name AS company_name, m.period_id,i.description,i.start_date,i.end_date  
     FROM internships m
     JOIN teachers t ON m.teacher_id = t.id
     JOIN students s ON m.student_id = s.id
@@ -71,7 +71,7 @@ $internship_periods = $pdo->query("SELECT id, description FROM internship_period
             <td><?= $row['teacher_name']; ?></td>
             <td><?= $row['student_name']; ?></td>
             <td><?= $row['company_name']; ?></td>
-            <td><?= $row['period_id']; ?></td>
+            <td><?= $row['description']; ?></td>
             <td><?= $row['start_date']; ?></td>
             <td><?= $row['end_date']; ?></td>
             <td>
