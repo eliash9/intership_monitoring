@@ -1,0 +1,11 @@
+# Aktifkan mod_rewrite
+RewriteEngine On
+RewriteBase /intership_monitoring/
+# Redirect semua permintaan ke file PHP
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1.php [L,QSA]
+
+# Tambahkan trailing slash opsional untuk direktori
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+[^/])$ $1/ [R=301,L]
