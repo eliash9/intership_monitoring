@@ -24,6 +24,7 @@
                 $pages = [
                     'Home' => '/index',
                     'Data Siswa' => '/pages/students',
+                    'Data Guru' => '/pages/teachers',
                     'Data Perusahaan' => '/pages/companies',
                     'Jadwal Monitoring' => '/pages/monitoring'
                 ];
